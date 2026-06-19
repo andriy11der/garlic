@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Хутір Любаша — Елітний часник сорту Любаша</title>
+<meta name="description" content="Купити часник сорту Любаша: повітряна бульбашка, однозубка, посівний матеріал 1-ої репродукції, товарний часник. Власне господарство. Доставка по Україні.">
+<meta property="og:title" content="Хутір Любаша — Елітний часник сорту Любаша">
+<meta property="og:description" content="Повітряна бульбашка, однозубка, посівний матеріал та товарний часник. Власне вирощування. Доставка по Україні.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧄</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --forest:#152b1d;
+  --forest-mid:#2a5038;
+  --forest-light:#3d7050;
+  --forest-pale:#c8ddd0;
+  --cream:#f6edd8;
+  --cream-light:#faf6ee;
+  --parchment:#ede1c8;
+  --gold:#b8913a;
+  --gold-lt:#d4a84e;
+  --text:#1a1a18;
+  --text-mid:#4a4a42;
+  --text-lt:#8a8a78;
+  --white:#ffffff;
+  --shadow-sm:0 2px 8px rgba(21,43,29,.08);
+  --shadow-md:0 4px 24px rgba(21,43,29,.13);
+  --r:4px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--cream-light);color:var(--text);font-size:16px;line-height:1.6;overflow-x:hidden}
+
+/* ─── HEADER ─── */
+header{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 2rem;height:72px;display:flex;align-items:center;justify-content:space-between;transition:background .35s,box-shadow .35s}
+header.scrolled{background:rgba(21,43,29,.97);backdrop-filter:blur(16px);box-shadow:0 2px 24px rgba(0,0,0,.22)}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.logo-icon{font-size:1.5rem}
+.logo-name{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:600;color:#fff;letter-spacing:.02em}
+nav{display:flex;align-items:center;gap:2rem}
+nav a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.8rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;transition:color .2s}
+nav a:hover{color:var(--gold-lt)}
+.nav-btn{background:var(--gold);color:#fff !important;padding:.5rem 1.4rem;border-radius:var(--r);transition:background .2s !important}
+.nav-btn:hover{background:var(--gold-lt) !important}
+.burger{display:none;cursor:pointer;flex-direction:column;gap:5px;background:none;border:none;padding:4px}
+.burger span{display:block;width:24px;height:2px;background:#fff;transition:.3s;border-radius:2px}
+
+/* ─── HERO ─── */
+.hero{min-height:100vh;background:var(--forest);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 65% 85% at 25% 55%,rgba(61,112,80,.38) 0%,transparent 60%),radial-gradient(ellipse 45% 55% at 85% 25%,rgba(184,145,58,.14) 0%,transparent 55%)}
+.hero-ghost{position:absolute;font-family:'Cormorant Garamond',serif;font-size:clamp(6rem,18vw,16rem);font-weight:700;color:rgba(255,255,255,.035);letter-spacing:-.03em;user-select:none;white-space:nowrap;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
+.hero-content{position:relative;z-index:2;text-align:center;padding:2rem;max-width:820px}
+.hero-badge{display:inline-flex;align-items:center;gap:.6rem;color:var(--gold-lt);font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.8rem;padding:.4rem 1.1rem;border:1px solid rgba(184,145,58,.38);border-radius:100px}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,7vw,5.8rem);font-weight:600;color:#fff;line-height:1.05;margin-bottom:1.5rem;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--gold-lt)}
+.hero-sub{color:rgba(255,255,255,.62);font-size:clamp(.9rem,2vw,1.1rem);max-width:520px;margin:0 auto 2.8rem;font-weight:300;line-height:1.75}
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:#fff;text-decoration:none;padding:1rem 2.6rem;font-size:.85rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;border-radius:var(--r);border:none;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-primary:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 8px 28px rgba(184,145,58,.38)}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;color:rgba(255,255,255,.35);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,rgba(255,255,255,.35),transparent);animation:scrollPulse 1.8s ease-in-out infinite}
+@keyframes scrollPulse{0%,100%{opacity:.35;transform:scaleY(1)}50%{opacity:.8;transform:scaleY(.65)}}
+
+/* ─── SHARED ─── */
+section{padding:5rem 2rem}
+.container{max-width:1200px;margin:0 auto}
+.section-eyebrow{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest-light);margin-bottom:.7rem}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,4vw,2.9rem);font-weight:600;color:var(--text);line-height:1.1;margin-bottom:.5rem}
+
+/* ─── CATALOG ─── */
+#catalog{background:var(--cream-light)}
+.catalog-intro{text-align:center;margin-bottom:4rem}
+.cat-block{margin-bottom:4.5rem}
+.cat-header{display:flex;align-items:flex-start;gap:1.4rem;padding-bottom:1.4rem;border-bottom:1px solid var(--parchment);margin-bottom:1.8rem}
+.cat-num{font-family:'Cormorant Garamond',serif;font-size:3.8rem;font-weight:700;color:var(--parchment);line-height:1;flex-shrink:0;min-width:54px}
+.cat-info h3{font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:600;color:var(--forest);margin-bottom:.25rem}
+.cat-info p{color:var(--text-mid);font-size:.875rem;line-height:1.55;max-width:620px}
+.cat-photo{width:100%;max-height:240px;object-fit:cover;object-position:center;border-radius:var(--r);margin-bottom:1.8rem;display:block;image-rendering:auto}
+.calibers{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
+.card{background:var(--white);border:1px solid rgba(21,43,29,.09);border-radius:var(--r);padding:1.4rem 1.3rem 1.2rem;position:relative;overflow:hidden;transition:box-shadow .25s,transform .25s;display:flex;flex-direction:column}
+.btn-order{margin-top:auto}
+.card::after{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--gold);transition:height .3s;border-radius:0 0 2px 2px}
+.card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.card:hover::after{height:100%}
+.card-size{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:var(--forest);line-height:1;margin-bottom:.55rem}
+.card-desc{font-size:.78rem;color:var(--text-lt);margin-bottom:.9rem;line-height:1.45}
+.badge-ok{display:inline-flex;align-items:center;gap:.3rem;font-size:.68rem;font-weight:600;letter-spacing:.06em;padding:.22rem .7rem;border-radius:100px;background:rgba(61,112,80,.1);color:var(--forest-light);margin-bottom:.9rem}
+.badge-ok::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--forest-light);flex-shrink:0}
+.card-price{font-size:.88rem;font-weight:600;color:var(--text);margin-bottom:1rem}
+.card-price span{color:var(--text-lt);font-weight:400;font-size:.75rem}
+.btn-order{width:100%;padding:.62rem;background:transparent;border:1.5px solid var(--forest);color:var(--forest);font-family:'Manrope',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;border-radius:var(--r);cursor:pointer;transition:background .2s,color .2s}
+.btn-order:hover{background:var(--forest);color:#fff}
+
+/* ─── FEATURES ─── */
+#features{background:var(--forest)}
+#features .section-eyebrow{color:rgba(255,255,255,.45)}
+#features .section-title{color:#fff}
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2.2rem;margin-top:3rem}
+.feat{text-align:center}
+.feat-icon{font-size:2.4rem;display:block;margin-bottom:1rem}
+.feat h4{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;color:#fff;margin-bottom:.45rem}
+.feat p{font-size:.83rem;color:rgba(255,255,255,.52);line-height:1.65}
+
+/* ─── ORDER ─── */
+#order{background:var(--cream)}
+.order-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:start;margin-top:3rem}
+.form-group{margin-bottom:1.15rem}
+.form-group label{display:block;font-size:.72rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--text-mid);margin-bottom:.45rem}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:.82rem 1rem;background:var(--white);border:1.5px solid rgba(21,43,29,.12);border-radius:var(--r);font-family:'Manrope',sans-serif;font-size:.9rem;color:var(--text);transition:border-color .2s;outline:none;-webkit-appearance:none;appearance:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--forest-light)}
+.form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' fill='none'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%238a8a78' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem;cursor:pointer}
+.form-group textarea{resize:vertical;min-height:95px;line-height:1.55}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.btn-submit{width:100%;padding:1rem;background:var(--forest);color:#fff;border:none;font-family:'Manrope',sans-serif;font-size:.83rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border-radius:var(--r);cursor:pointer;transition:background .2s,transform .2s;margin-top:.4rem}
+.btn-submit:hover{background:var(--forest-mid);transform:translateY(-1px)}
+.contact-side h3{font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:600;color:var(--forest);margin-bottom:1.5rem}
+.contact-item{display:flex;align-items:center;gap:1rem;padding:.9rem 0;border-bottom:1px solid rgba(21,43,29,.08)}
+.contact-item:last-of-type{border-bottom:none}
+.contact-ico{font-size:1.35rem;flex-shrink:0;width:28px;text-align:center}
+.contact-lbl{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-lt);margin-bottom:.12rem}
+.contact-val{font-size:.92rem;font-weight:600;color:var(--text)}
+.tg-note{background:rgba(21,43,29,.06);border-left:3px solid var(--forest-light);padding:.95rem 1.15rem;margin-top:1.5rem;font-size:.82rem;color:var(--text-mid);line-height:1.55;border-radius:0 var(--r) var(--r) 0}
+
+/* ─── GALLERY ─── */
+#gallery{background:var(--parchment)}
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:3rem}
+.gallery-item{overflow:hidden;border-radius:var(--r);cursor:pointer;aspect-ratio:4/3}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.gallery-item:hover img{transform:scale(1.05)}
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:1000;align-items:center;justify-content:center;padding:1.5rem}
+.lightbox.open{display:flex}
+.lightbox img{max-width:90vw;max-height:88vh;object-fit:contain;border-radius:var(--r);box-shadow:0 8px 48px rgba(0,0,0,.5)}
+.lightbox-close{position:absolute;top:1.2rem;right:1.5rem;color:#fff;font-size:2rem;cursor:pointer;line-height:1;background:none;border:none;opacity:.7;transition:opacity .2s}
+.lightbox-close:hover{opacity:1}
+@media(max-width:600px){.gallery-grid{grid-template-columns:1fr}}
+
+/* ─── FOOTER ─── */
+footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-align:center}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:600;color:#fff;margin-bottom:.35rem}
+.footer-tagline{font-size:.78rem;letter-spacing:.05em;margin-bottom:1rem}
+.footer-line{width:36px;height:1px;background:var(--gold);margin:.9rem auto}
+.footer-copy{font-size:.72rem;color:rgba(255,255,255,.28)}
+
+/* ─── ANIMATIONS ─── */
+.fade{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.fade.in{opacity:1;transform:none}
+.fade:nth-child(2){transition-delay:.1s}
+.fade:nth-child(3){transition-delay:.2s}
+.fade:nth-child(4){transition-delay:.3s}
+
+/* ─── TOAST ─── */
+.toast{position:fixed;bottom:2rem;right:2rem;left:2rem;max-width:420px;margin:0 auto;background:var(--forest);color:#fff;padding:1.2rem 1.8rem;border-radius:var(--r);font-size:.95rem;font-weight:500;box-shadow:0 8px 40px rgba(0,0,0,.3);transform:translateY(120px);opacity:0;transition:.4s ease;z-index:999;line-height:1.55;text-align:center}
+.toast.show{transform:none;opacity:1}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:900px){
+  .order-grid{grid-template-columns:1fr;gap:2.5rem}
+}
+@media(max-width:768px){
+  nav{display:none}
+  nav.open{display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:rgba(21,43,29,.98);backdrop-filter:blur(16px);padding:1.5rem 2rem;gap:1.2rem;border-top:1px solid rgba(255,255,255,.08)}
+  .burger{display:flex}
+  .calibers{grid-template-columns:repeat(2,1fr)}
+  .form-row{grid-template-columns:1fr}
+  .cat-num{font-size:2.8rem}
+}
+@media(max-width:420px){
+  .calibers{grid-template-columns:1fr}
+  section{padding:4rem 1.25rem}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+  <a href="#" class="logo">
+    <span class="logo-icon">🧄</span>
+    <span class="logo-name">Хутір Любаша</span>
+  </a>
+  <nav id="nav">
+    <a href="#catalog">Каталог</a>
+    <a href="#features">Переваги</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#order" class="nav-btn">Замовити</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Меню" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-ghost">Любаша</div>
+  <div class="hero-content">
+    <div class="hero-badge">🌿 Сорт Любаша &middot; Власне господарство</div>
+    <h1>Часник, що вирощений<br><em>з турботою</em></h1>
+    <p class="hero-sub">Повітряна бульбашка, однозубка, посівний матеріал та товарний часник — елітне насіння і товарна продукція прямо з поля, без посередників</p>
+    <a href="#catalog" class="btn-primary">Переглянути каталог →</a>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>гортай</span>
+  </div>
+</section>
+
+<!-- CATALOG -->
+<section id="catalog">
+  <div class="container">
+    <div class="catalog-intro fade">
+      <span class="section-eyebrow">Наш асортимент</span>
+      <h2 class="section-title">Каталог товарів</h2>
+    </div>
+
+    <!-- I -->
+    <div class="cat-block fade">
+      <div class="cat-header">
+        <div class="cat-num">I</div>
+        <div class="cat-info">
+          <h3>Повітряна бульбашка</h3>
+          <p>Насіннєвий матеріал із стрілок часнику. Вихідний матеріал для відновлення сортових якостей і розмноження без накопичення хвороб. Посів — осінь або весна.</p>
+        </div>
+      </div>
+      <img src="photo_2026-06-19_09-33-40.jpg" alt="Повітряна бульбашка часнику Любаша" class="cat-photo">
+      <div class="calibers">
+        <div class="card">
+          <div class="card-size">4–6 мм</div>
+          <div class="card-desc">Стандартний калібр для першого року посіву на великих площах</div>
+          <div class="badge-ok">Є в наявності</div>
+          <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <button class="btn-order" onclick="prefill('Повітряна бульбашка','4–6 мм')">Замовити</button>
+        </div>
+        <div class="card">
+          <div class="card-size">7–8 мм</div>
+          <div class="card-desc">Великий калібр — вища схожість і кращий старт у перший сезон</div>
+          <div class="badge-ok">Є в наявності</div>
+          <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <button class="btn-order" onclick="prefill('Повітряна бульбашка','7–8 мм')">Замовити</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- II -->
+    <div class="cat-block fade">
+      <div class="cat-header">
+        <div class="cat-num">II</div>
+        <div class="cat-info">
+          <h3>Однозубка</h3>
+          <p>Вирощена з повітряної бульбашки за один сезон. Ідеальний посадковий матеріал для отримання товарного часнику та посівного матеріалу 1-ої репродукції.</p>
+        </div>
+      </div>
+      <img src="однозубка.jpg" alt="Однозубка часнику Любаша" class="cat-photo">
+      <div class="calibers">
+        <div class="card">
+          <div class="card-size">12–15 мм</div>
+          <div class="card-desc">Економічний варіант для великих посівних площ</div>
+          <div class="badge-ok">Є в наявності</div>
+          <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <button class="btn-order" onclick="prefill('Однозубка','12–15 мм')">Замовити</button>
+        </div>
+        <div class="card">
+          <div class="card-size">16–24 мм</div>
+          <div class="card-desc">Відбірний калібр — дає вирівняну велику головку</div>
+          <div class="badge-ok">Є в наявності</div>
+          <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <button class="btn-order" onclick="prefill('Однозубка','16–24 мм')">Замовити</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- III -->
+    <div class="cat-block fade">
+      <div class="cat-header">
+        <div class="cat-num">III</div>
+        <div class="cat-info">
+          <h3>Посівний матеріал 1-ої репродукції</h3>
+          <p>Відбірні зубки першого сезону вирощування. Гарантована сортова чистота сорту Любаша, максимальна схожість, мінімальний ризик хвороб.</p>
+        </div>
+      </div>
+      <img src="репрод.jpg" alt="Посівний матеріал 1-ої репродукції часнику Любаша" class="cat-photo">
+      <div class="calibers">
+        <div class="card">
+          <div class="card-size">4+ мм</div>
+          <div class="card-desc">Для щільного посіву — дрібна фракція, економія насіннєвого фонду</div>
+          <div class="badge-ok">Є в наявності</div>
+          <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <button class="btn-order" onclick="prefill('Посівний матеріал 1-ої репродукції','4+ мм')">Замовити</button>
+        </div>
+        <div class="card">
+          <div class="card-size">5+ мм</div>
+          <div class="card-desc">Середня фракція — оптимальний баланс витрат і врожайності</div>
+          <div class="badge-ok">Є в наявності</div>
+          <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <button class="btn-order" onclick="prefill('Посівний матеріал 1-ої репродукції','5+ мм')">Замовити</button>
+        </div>
+        <div class="card">
+          <div class="card-size">6+ мм</div>
+          <div class="card-desc">Великий зубок — потужний старт і максимальний розмір головки</div>
+          <div class="badge-ok">Є в наявності</div>
+          <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <button class="btn-order" onclick="prefill('Посівний матеріал 1-ої репродукції','6+ мм')">Замовити</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- IV -->
+    <div class="cat-block fade">
+      <div class="cat-header">
+        <div class="cat-num">IV</div>
+        <div class="cat-info">
+          <h3>Товарний часник</h3>
+          <p>Кінцевий продукт для вживання та реалізації. Яскравий товарний вигляд, щільна головка, стабільний гострий смак — характерні риси сорту Любаша.</p>
+        </div>
+      </div>
+      <img src="товарний.jpg" alt="Товарний часник Любаша" class="cat-photo">
+      <div class="calibers">
+        <div class="card">
+          <div class="card-size">40–50 мм</div>
+          <div class="card-desc">Стандартний товарний розмір — ринок, роздріб, переробка</div>
+          <div class="badge-ok">Є в наявності</div>
+          <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <button class="btn-order" onclick="prefill('Товарний часник','40–50 мм')">Замовити</button>
+        </div>
+        <div class="card">
+          <div class="card-size">50 мм+</div>
+          <div class="card-desc">Великоголовий відбір — преміум сегмент, ексклюзивна пропозиція</div>
+          <div class="badge-ok">Є в наявності</div>
+          <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <button class="btn-order" onclick="prefill('Товарний часник','50 мм+')">Замовити</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-eyebrow">Наші принципи</span>
+      <h2 class="section-title" style="color:#fff">Чому обирають нас</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feat fade">
+        <span class="feat-icon">🌱</span>
+        <h4>Власне вирощування</h4>
+        <p>Ми самі вирощуємо кожну партію — від бульбашки до товарного часнику. Без посередників і перекупників.</p>
+      </div>
+      <div class="feat fade">
+        <span class="feat-icon">🔬</span>
+        <h4>Сортова чистота</h4>
+        <p>Матеріал не змішується з іншими сортами. Любаша у чистоті — від першого до останнього кілограма.</p>
+      </div>
+      <div class="feat fade">
+        <span class="feat-icon">📦</span>
+        <h4>Доставка по Україні</h4>
+        <p>Відправляємо Новою Поштою по всій Україні. Від 50 кг — доставка транспортними компаніями.</p>
+      </div>
+      <div class="feat fade">
+        <span class="feat-icon">🤝</span>
+        <h4>Консультація агронома</h4>
+        <p>Підкажемо норми висіву, строки посадки та відстань між рядами — безкоштовно для кожного покупця.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-eyebrow">Власне вирощування</span>
+      <h2 class="section-title">Наші поля</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item fade" onclick="openLightbox('гал1.jpg')">
+        <img src="гал1.jpg" alt="Часник Любаша на полі">
+      </div>
+      <div class="gallery-item fade" onclick="openLightbox('гал2.jpg')">
+        <img src="гал2.jpg" alt="Рядки часнику Любаша">
+      </div>
+      <div class="gallery-item fade" onclick="openLightbox('гал3.jpg')">
+        <img src="гал3.jpg" alt="Поле часнику Любаша">
+      </div>
+      <div class="gallery-item fade" onclick="openLightbox('гал4.jpg')">
+        <img src="гал4.jpg" alt="Сходи часнику Любаша">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- ORDER -->
+<section id="order">
+  <div class="container">
+    <span class="section-eyebrow">Зв'язок</span>
+    <h2 class="section-title">Залишити замовлення</h2>
+    <div class="order-grid">
+      <form id="orderForm" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Ваше ім'я *</label>
+            <input type="text" id="f-name" placeholder="Іван Петренко" required>
+          </div>
+          <div class="form-group">
+            <label>Телефон *</label>
+            <input type="tel" id="f-phone" placeholder="+380__________" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Категорія товару *</label>
+          <select id="f-cat" onchange="updateCal()" required>
+            <option value="">— Оберіть категорію —</option>
+            <option>Повітряна бульбашка</option>
+            <option>Однозубка</option>
+            <option>Посівний матеріал 1-ої репродукції</option>
+            <option>Товарний часник</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Калібр *</label>
+          <select id="f-cal" required>
+            <option value="">— спочатку оберіть категорію —</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Кількість, кг</label>
+          <input type="number" id="f-qty" placeholder="Наприклад: 50" min="1">
+        </div>
+        <div class="form-group">
+          <label>Коментар</label>
+          <textarea id="f-note" placeholder="Додаткові побажання або запитання..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">✉ Надіслати замовлення</button>
+      </form>
+
+      <div class="contact-side">
+        <h3>Зв'яжіться з нами</h3>
+        <div class="contact-item">
+          <span class="contact-ico">📞</span>
+          <div>
+            <div class="contact-lbl">Телефон / Viber</div>
+            <div class="contact-val"><a href="tel:+380683342390" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(21,43,29,.25)">+38 (068) 334 23 90</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-ico">✈️</span>
+          <div>
+            <div class="contact-lbl">Telegram</div>
+            <div class="contact-val"><a href="https://t.me/AndriyQAderepan" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(21,43,29,.25)">@AndriyQAderepan</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-ico">📧</span>
+          <div>
+            <div class="contact-lbl">Email</div>
+            <div class="contact-val"><a href="mailto:andriy11derepan@gmail.com" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(21,43,29,.25)">andriy11derepan@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="tg-note">
+          💬 Замовлення з форми надходять напряму у наш Telegram. Ми відповімо протягом кількох годин і погодимо деталі.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">🧄 Хутір Любаша</div>
+  <div class="footer-tagline">Власне господарство &middot; Без посередників &middot; Доставка по всій Україні</div>
+  <div class="footer-line"></div>
+  <div class="footer-copy">&copy; 2025 Хутір Любаша &middot; Часник сорту Любаша</div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const CAL_MAP = {
+  'Повітряна бульбашка':['4–6 мм','7–8 мм'],
+  'Однозубка':['12–15 мм','16–24 мм'],
+  'Посівний матеріал 1-ої репродукції':['4+ мм','5+ мм','6+ мм'],
+  'Товарний часник':['40–50 мм','50 мм+']
+};
+
+window.addEventListener('scroll',()=>{
+  document.getElementById('hdr').classList.toggle('scrolled',scrollY>50);
+});
+
+function toggleMenu(){
+  document.getElementById('nav').classList.toggle('open');
+}
+document.querySelectorAll('nav a').forEach(a=>{
+  a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open'));
+});
+
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
+},{threshold:.1});
+document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+
+function updateCal(preset){
+  const cat = document.getElementById('f-cat').value;
+  const sel = document.getElementById('f-cal');
+  sel.innerHTML='';
+  if(!cat){
+    sel.innerHTML='<option value="">— спочатку оберіть категорію —</option>';
+    return;
+  }
+  const opts=['<option value="">— Оберіть калібр —</option>'];
+  (CAL_MAP[cat]||[]).forEach(c=>opts.push(`<option value="${c}">${c}</option>`));
+  sel.innerHTML=opts.join('');
+  if(preset) sel.value=preset;
+}
+
+function prefill(cat,cal){
+  document.getElementById('order').scrollIntoView({behavior:'smooth'});
+  setTimeout(()=>{
+    document.getElementById('f-cat').value=cat;
+    updateCal(cal);
+  },550);
+}
+
+async function submitForm(e){
+  e.preventDefault();
+  const name  = document.getElementById('f-name').value;
+  const phone = document.getElementById('f-phone').value;
+  const cat   = document.getElementById('f-cat').value;
+  const cal   = document.getElementById('f-cal').value;
+  const qty   = document.getElementById('f-qty').value;
+  const note  = document.getElementById('f-note').value;
+
+  const msg = `🧄 *Нове замовлення — Хутір Любаша*\n\n`
+    +`👤 Ім'я: ${name}\n📞 Телефон: ${phone}\n`
+    +`📦 Товар: ${cat}\n📐 Калібр: ${cal}\n`
+    +`⚖️ Кількість: ${qty||'не вказано'} кг\n`
+    +`💬 Коментар: ${note||'—'}`;
+
+  // ⚠️ Замініть значення нижче на свої:
+  const BOT = '7723744120:AAGxoQj3By-nKSaoNHDIbBm6qP-QVSXpRqo';
+  const CID = '412915014';
+
+  try{
+    const r = await fetch(`https://api.telegram.org/bot${BOT}/sendMessage`,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({chat_id:CID,text:msg,parse_mode:'Markdown'})
+    });
+    const d = await r.json();
+    if(d.ok){
+      toast('✅ Дякуємо за замовлення!\nОператор зв\'яжеться з Вами найближчим часом.');
+      e.target.reset();
+      updateCal();
+    } else {
+      toast('❌ Помилка. Зв\'яжіться з нами напряму за телефоном.');
+    }
+  }catch{
+    toast('❌ Помилка мережі. Зателефонуйте нам напряму.');
+  }
+}
+
+function openLightbox(src){
+  document.getElementById('lightbox-img').src=src;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeLightbox(); });
+
+function toast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),4500);
+}
+</script>
+</body>
+</html>
