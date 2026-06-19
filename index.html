@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Хутір Любаша — Елітний часник сорту Любаша</title>
 <meta name="description" content="Купити часник сорту Любаша: повітряна бульбашка, однозубка, посівний матеріал 1-ої репродукції, товарний часник. Власне господарство. Доставка по Україні.">
 <meta property="og:title" content="Хутір Любаша — Елітний часник сорту Любаша">
@@ -34,7 +34,7 @@ html{scroll-behavior:smooth}
 body{font-family:'Manrope',sans-serif;background:var(--cream-light);color:var(--text);font-size:16px;line-height:1.6;overflow-x:hidden}
 
 /* ─── HEADER ─── */
-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 2rem;height:72px;display:flex;align-items:center;justify-content:space-between;transition:background .35s,box-shadow .35s}
+header{position:fixed;top:0;left:0;right:0;z-index:100;padding:env(safe-area-inset-top) 2rem 0;height:calc(72px + env(safe-area-inset-top));display:flex;align-items:flex-end;padding-bottom:.85rem;justify-content:space-between;transition:background .35s,box-shadow .35s}
 header.scrolled{background:rgba(21,43,29,.97);backdrop-filter:blur(16px);box-shadow:0 2px 24px rgba(0,0,0,.22)}
 .logo{display:flex;align-items:center;gap:.6rem;text-decoration:none}
 .logo-icon{font-size:1.5rem}
