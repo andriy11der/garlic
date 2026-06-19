@@ -145,6 +145,17 @@ section{padding:5rem 2rem}
 .lightbox-counter{position:absolute;bottom:1.2rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.6);font-size:.8rem;letter-spacing:.1em}
 @media(max-width:600px){.gallery-grid{grid-template-columns:1fr}}
 
+/* ─── REVIEWS ─── */
+#reviews{background:var(--cream-light)}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem}
+.review-card{background:var(--white);border:1px solid rgba(21,43,29,.09);border-radius:var(--r);padding:1.6rem 1.5rem;display:flex;flex-direction:column;gap:.9rem;box-shadow:var(--shadow-sm)}
+.review-stars{color:var(--gold);font-size:1rem;letter-spacing:.1em}
+.review-text{font-size:.88rem;color:var(--text-mid);line-height:1.7;font-style:italic}
+.review-author{display:flex;align-items:center;gap:.75rem;margin-top:auto;padding-top:.9rem;border-top:1px solid var(--parchment)}
+.review-avatar{width:40px;height:40px;border-radius:50%;background:var(--forest-pale);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:var(--forest);flex-shrink:0}
+.review-name{font-size:.85rem;font-weight:600;color:var(--text)}
+.review-region{font-size:.72rem;color:var(--text-lt)}
+
 /* ─── FOOTER ─── */
 footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-align:center}
 .footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:600;color:#fff;margin-bottom:.35rem}
@@ -193,6 +204,7 @@ footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-al
     <a href="#catalog">Каталог</a>
     <a href="#features">Переваги</a>
     <a href="#gallery">Галерея</a>
+    <a href="#reviews">Відгуки</a>
     <a href="#order" class="nav-btn">Замовити</a>
   </nav>
   <button class="burger" id="burger" aria-label="Меню" onclick="toggleMenu()">
@@ -407,6 +419,67 @@ footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-al
   <button class="lightbox-nav lightbox-next" onclick="changePhoto(1)">&#8250;</button>
   <div class="lightbox-counter" id="lightbox-counter"></div>
 </div>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-eyebrow">Відгуки покупців</span>
+      <h2 class="section-title">Що кажуть наші клієнти</h2>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="review-card fade">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">«Брав однозубку калібру 16–24 мм на 10 соток. Схожість відмінна, голівки вийшли рівні та великі. Наступного сезону замовлятиму знову — якість говорить сама за себе.»</p>
+        <div class="review-author">
+          <div class="review-avatar">В</div>
+          <div>
+            <div class="review-name">Василь К.</div>
+            <div class="review-region">Вінницька обл.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card fade">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">«Замовляла товарний часник кілька разів для ринку. Головки щільні, красиві, покупці беруть охоче. Зв'язок з господарем швидкий, доставка Новою Поштою без проблем.»</p>
+        <div class="review-author">
+          <div class="review-avatar">О</div>
+          <div>
+            <div class="review-name">Оксана М.</div>
+            <div class="review-region">Черкаська обл.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card fade">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">«Купив повітряну бульбашку для відновлення сорту. Матеріал чистий, без хвороб. Андрій детально пояснив норми висіву — окрема подяка за консультацію.»</p>
+        <div class="review-author">
+          <div class="review-avatar">М</div>
+          <div>
+            <div class="review-name">Микола Г.</div>
+            <div class="review-region">Полтавська обл.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card fade">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">«Третій рік поспіль беру посівний матеріал 1-ої репродукції. Сортова чистота на висоті. Справжній господарський підхід, рекомендую всім.»</p>
+        <div class="review-author">
+          <div class="review-avatar">І</div>
+          <div>
+            <div class="review-name">Іван Т.</div>
+            <div class="review-region">Хмельницька обл.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <!-- ORDER -->
 <section id="order">
