@@ -94,6 +94,8 @@ section{padding:5rem 2rem}
 .badge-ok::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--forest-light);flex-shrink:0}
 .card-price{font-size:.88rem;font-weight:600;color:var(--text);margin-bottom:1rem}
 .card-price span{color:var(--text-lt);font-weight:400;font-size:.75rem}
+.card-min{font-size:.72rem;color:var(--text-lt);margin-bottom:1rem}
+.card-min strong{color:var(--forest-light)}
 .btn-order{width:100%;padding:.62rem;background:transparent;border:1.5px solid var(--forest);color:var(--forest);font-family:'Manrope',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;border-radius:var(--r);cursor:pointer;transition:background .2s,color .2s}
 .btn-order:hover{background:var(--forest);color:#fff}
 
@@ -251,6 +253,7 @@ footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-al
           <div class="card-desc">Стандартний калібр для першого року посіву на великих площах</div>
           <div class="badge-ok">На етапі вирощування</div>
           <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <div class="card-min">Мін. замовлення: <strong>від 1 кг</strong></div>
           <button class="btn-order" onclick="prefill('Повітряна бульбашка','4–6 мм')">Замовити</button>
         </div>
         <div class="card">
@@ -258,6 +261,7 @@ footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-al
           <div class="card-desc">Великий калібр — вища схожість і кращий старт у перший сезон</div>
           <div class="badge-ok">На етапі вирощування</div>
           <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <div class="card-min">Мін. замовлення: <strong>від 1 кг</strong></div>
           <button class="btn-order" onclick="prefill('Повітряна бульбашка','7–8 мм')">Замовити</button>
         </div>
       </div>
@@ -279,6 +283,7 @@ footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-al
           <div class="card-desc">Економічний варіант для великих посівних площ</div>
           <div class="badge-ok">На етапі вирощування</div>
           <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <div class="card-min">Мін. замовлення: <strong>від 1 кг</strong></div>
           <button class="btn-order" onclick="prefill('Однозубка','12–15 мм')">Замовити</button>
         </div>
         <div class="card">
@@ -286,6 +291,7 @@ footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-al
           <div class="card-desc">Відбірний калібр — дає вирівняну велику головку</div>
           <div class="badge-ok">На етапі вирощування</div>
           <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <div class="card-min">Мін. замовлення: <strong>від 1 кг</strong></div>
           <button class="btn-order" onclick="prefill('Однозубка','16–24 мм')">Замовити</button>
         </div>
       </div>
@@ -307,6 +313,7 @@ footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-al
           <div class="card-desc">Для щільного посіву — дрібна фракція, економія насіннєвого фонду</div>
           <div class="badge-ok">На етапі вирощування</div>
           <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <div class="card-min">Мін. замовлення: <strong>від 5 кг</strong></div>
           <button class="btn-order" onclick="prefill('Посівний матеріал 1-ої репродукції','4+ мм')">Замовити</button>
         </div>
         <div class="card">
@@ -314,6 +321,7 @@ footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-al
           <div class="card-desc">Середня фракція — оптимальний баланс витрат і врожайності</div>
           <div class="badge-ok">На етапі вирощування</div>
           <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <div class="card-min">Мін. замовлення: <strong>від 5 кг</strong></div>
           <button class="btn-order" onclick="prefill('Посівний матеріал 1-ої репродукції','5+ мм')">Замовити</button>
         </div>
         <div class="card">
@@ -321,6 +329,7 @@ footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-al
           <div class="card-desc">Великий зубок — потужний старт і максимальний розмір головки</div>
           <div class="badge-ok">На етапі вирощування</div>
           <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <div class="card-min">Мін. замовлення: <strong>від 5 кг</strong></div>
           <button class="btn-order" onclick="prefill('Посівний матеріал 1-ої репродукції','6+ мм')">Замовити</button>
         </div>
       </div>
@@ -342,6 +351,7 @@ footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-al
           <div class="card-desc">Стандартний товарний розмір — ринок, роздріб, переробка</div>
           <div class="badge-ok">На етапі вирощування</div>
           <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <div class="card-min">Мін. замовлення: <strong>від 5 кг</strong></div>
           <button class="btn-order" onclick="prefill('Товарний часник','40–50 мм')">Замовити</button>
         </div>
         <div class="card">
@@ -349,6 +359,7 @@ footer{background:#0d1c12;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-al
           <div class="card-desc">Великоголовий відбір — преміум сегмент, ексклюзивна пропозиція</div>
           <div class="badge-ok">На етапі вирощування</div>
           <div class="card-price">за домовленістю <span>/ кг</span></div>
+          <div class="card-min">Мін. замовлення: <strong>від 5 кг</strong></div>
           <button class="btn-order" onclick="prefill('Товарний часник','50 мм+')">Замовити</button>
         </div>
       </div>
